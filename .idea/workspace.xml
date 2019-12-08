@@ -2,8 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e69cf37b-c00e-46e3-8910-1afed3221555" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/css/tabbarTwo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/homePage1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/homePage2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/homePage4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/homepage3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/testDownList.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/headerTabbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/headerTabbar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/home.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/headerTabbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/headerTabbar.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,9 +22,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -55,6 +62,16 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="test.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="test.js" working-dir="$PROJECT_DIR$/html">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.test.js" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -70,7 +87,7 @@
       <workItem from="1575785428833" duration="672000" />
       <workItem from="1575786989614" duration="1010000" />
       <workItem from="1575788309649" duration="23342000" />
-      <workItem from="1575815670503" duration="1761000" />
+      <workItem from="1575815670503" duration="13786000" />
     </task>
     <servers />
   </component>

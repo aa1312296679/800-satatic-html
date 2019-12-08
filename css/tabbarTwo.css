@@ -1,0 +1,82 @@
+.tabbar_two_wrapper{
+    width: 100%;
+    background-size: 100% 100%;
+    border-bottom: 3px dashed #e2e3e3;
+}
+
+.tabbar_two_wrapper .tabbar_two_content{
+    width: 91.8%;
+    min-width: 1200px;
+    margin: 0 auto;
+    /*overflow: hidden;*/
+    border: 1px dashed red;
+    font-size: 16px;
+    color: #595959;
+}
+
+.tabbar_two_wrapper .tabbar_two_content::after{
+    content: "";
+    display: block;
+    clear:both;
+}
+
+.tabbar_two_content .tabbbar_two_content_first,
+.tabbar_two_content .tabbbar_two_content_menu{
+    float: left;
+}
+
+.tabbar_two_content .tabbbar_two_content_first{
+    width: 85px;
+    text-align: center;
+}
+
+.tabbar_two_content .tabbbar_two_content_menu{
+    /*overflow: hidden;*/
+}
+
+.tabbar_two_content .tabbbar_two_content_menu .menu_item,
+.tabbar_two_content .tabbbar_two_content_first{
+    height: 55px;
+    line-height: 55px;
+}
+
+.tabbar_two_content .tabbbar_two_content_menu .menu_item{
+    float: left;
+    padding-top: 11px;
+    border: 1px dashed orange;
+    /*position: relative;*/
+    /*min-width: 120px;*/
+}
+
+.list_wrapper,.list_wrapper_active{
+    line-height: 33px;
+    border-radius: 6px;
+    border: 1px dashed red;
+    /*position: absolute;*/
+    /*left: 0;*/
+    /*top: 10px;*/
+    /*width: 85%;*/
+    /*padding: 0 10px;*/
+    text-align: center;
+    background: #fff;
+}
+
+.list_wrapper .list_item,.list_wrapper_active .list_item{
+    padding: 0 10px;
+}
+
+/***
+下拉列表List鼠标未漂浮状态
+**/
+.list_wrapper{
+    height: 33px;
+    overflow: hidden;
+}
+
+/**
+下拉列表List鼠标漂浮状态
+**/
+
+
+
+

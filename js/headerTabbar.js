@@ -23,10 +23,11 @@ initialTabbar(0);
 let cast = new BroadcastChannel('fsSend');
 // tabbar点击处理
 $(".tabbar_item").click(function () {
-    // 获取被点击的tab导航
+    // 获取被选中的tab索引
     var curIndex = $(this).index();
+    // tab头部切换处理
     headerTab['tabHandle'](curIndex);
-
+    //将被选中的tab索引传递至父窗口
     cast.postMessage({curIndex:activeIndex});
 });
 
@@ -37,10 +38,3 @@ $(".tabbar_item").click(function () {
 function initialTabbar(activeIndex) {
     headerTab['tabHandle'](activeIndex);
 }
-
-
-
-
-// document.onclick = function () {
-//     cast.postMessage('headerTabbar')
-// }
