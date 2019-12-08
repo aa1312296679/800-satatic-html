@@ -1,0 +1,16 @@
+@font-face {font-family: "iconfont";
+  src: url('./../fonts/iconfont.eot?t=1575752547098'); /* IE9 */
+  src: url('./../fonts/iconfont.eot?t=1575752547098#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAP4AAsAAAAACBgAAAOsAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDHAqDUIMgATYCJAMQCwoABCAFhG0HTBsWBxEVnDnJfiRkJ5n3h1OtyhqNZCTeBA+UZ/8mk2azhj5gnuAT4PaLJxVlbLtgMcTk1pyVJCdM1FxR1o48+of8L6X00oz+53J8V4nPb2c5rb2fH/UCjCZQQGNtCmQCFVDOLbKLuCIWuRkCsMKPGERJWU0zdFRQLwGIfr17dkbPqFEbcgU6Aq1ioopYhAFdma1cARYG3xcfSRI6KBgkaGBDj9JuFBhtTYlyknmSdp6WyeMZAWUaSCAGUEH0qjR3QUbhGCRW1m9U0gAdHQWMtsY0U6LZzHP3ItaxBZTef57QQNk2AKTwInliHIpBAWMaBgmmRO4NbKMCoAMWwDzgkkDyWVygoLrY2UVY2Pl3nRPWYsXklXNdmy93b+kPXj7Jpdmy0W6vHnmLls2b3b1bKzUcsu5h55YtmrntuNfCLXiwsWvu+Yl79+rWCrHlXtnFOwFM8rxypxnr7nisO5dqffdu8/v3W1qfvNDpxDU/63VXxqw9M/cULHfZcTnETfRetszKbs4KtxXuK92jL9wXAsYEH8j6u4WRy12X/fnmZmc0jXT57zLCaEx2NplGuHxxHenf3TMSGgx39q1/dOGdz9phG282tPGqWD9jcr+q07sffT1+demsJU1aThzcs+RExdNdwQO9y+v6zydj0JRr/caPHkdV9chv4pruVFwcEFBSrKS7df5WeG+qxvXuN/7ZiPuNMw0lnVqXijLRsbVWMqPz/ZnrB63b9nDZPi25SifJwTNdulzYdEdPn7jFsanWW2sqii1anm67JLE2eLxo7N+/UTQR/fqLxnEyoXZx39PlGoNAW0knxRXMf2amtAHzRLlQTvqnnThs7vWoo33Ob936okoeOaV0DZzmiSowCT+GA+b8QQ4wT7V5SKOqJp+yHYtKu1QSCmCFdfDf4uDEszGsrpAYBbrK4UHBAl+Q6IQgKikGDFiTAho6+WBFNOXTrXFmCBKhWgJRTOdA4MBBULDjDEgcuIqopKdgwI3PoOEgJGhyz3YLFvZRfhA0ih7sH8jxEohO8zD3ivE9GUnzAvITZSMftFWTj11wQRljyPaJnWqAIDzDmdsOp4lhFR7QafVSXfu6DlU3qhzPSe5AIEMhD1h/gDhsEbziKi98/gpFbxNDGnAtxickNlQ/aFUaAHIRLyDctVyz+Yg6SgUgEGwGzpwRTTjMwFrdboAcVXn1CK56tVAoQMXV/NL5CdfAgwZtp2m78k9mIAsuyu/8i2TJsFKZTrREb6gqSQA=') format('woff2'),
+  url('./../fonts/iconfont.woff?t=1575752547098') format('woff'),
+  url('./../fonts/iconfont.ttf?t=1575752547098') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('./../fonts/iconfont.svg?t=1575752547098#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

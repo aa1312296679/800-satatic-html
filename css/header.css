@@ -1,0 +1,103 @@
+/**头部容器***/
+.header_wrapper{
+    width: 100%;
+}
+
+/***头部导航外层容器***/
+.header_tab_bar_wrapper{
+    background: #f8f8f8;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+/**头部内容外层容器***/
+.header_content_wrapper{
+    background: #fff;
+}
+
+/**头部导航和头部内容**/
+.header_tab_bar,.header_content{
+    width: 91.8%;
+    min-width: 1200px;
+    margin: 0 auto;
+}
+
+.header_tab_bar{
+    font-size: 12px;
+    color: #585858;
+    padding: 9px 0;
+    overflow: hidden;
+}
+
+.header_tab_bar .menu_wrapper,.header_tab_bar .right_wrapper{
+    /*border: 1px solid greenyellow;*/
+    float: right;
+}
+
+.menu_wrapper .menu_item{
+    float: left;
+    padding: 0 10.75px;
+    cursor:pointer;
+}
+
+.header_tab_bar .logo_left{
+    float: left;
+}
+
+.iconxiajiantou:after {
+    content: "\e731";
+    font-weight: bold;
+}
+.iconlingdang:before {
+    content: "\e636";
+    margin-right: 3px;
+}
+
+.iconlingdang{
+    position: relative;
+}
+
+.iconweibiaoti:before {
+    content: "\e60d";
+}
+
+.iconlingdang .message{
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    left: 16px;
+    top: 0;
+    border-radius: 50%;
+    background: green;
+    color: #fff;
+    text-align: center;
+    font-size: 5px;
+}
+
+.header_content_wrapper .header_content{
+    overflow: hidden;
+}
+
+.header_content .logo,
+.header_content_wrapper .content{
+   float: left;
+}
+
+.header_content .logo,
+.header_content_wrapper .content{
+    height: 129px;
+}
+
+.header_content .logo{
+    text-align: center;
+    width: 23%;
+    line-height: 180px;
+}
+
+.header_content_wrapper .content{
+    width: 77%;
+    border: 1px dashed orange;
+}
+
+.right_wrapper{
+
+}
