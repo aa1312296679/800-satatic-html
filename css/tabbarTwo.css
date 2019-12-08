@@ -10,8 +10,9 @@
     margin: 0 auto;
     /*overflow: hidden;*/
     border: 1px dashed red;
-    font-size: 16px;
     color: #595959;
+    font-size: 14px;
+    font-weight: 500;
 }
 
 .tabbar_two_wrapper .tabbar_two_content::after{
@@ -32,6 +33,7 @@
 
 .tabbar_two_content .tabbbar_two_content_menu{
     /*overflow: hidden;*/
+    font-size: 14px;
 }
 
 .tabbar_two_content .tabbbar_two_content_menu .menu_item,
@@ -44,21 +46,19 @@
     float: left;
     padding-top: 11px;
     border: 1px dashed orange;
+    position: relative;
     /*position: relative;*/
     /*min-width: 120px;*/
+    padding-right: 25px;
 }
 
 .list_wrapper,.list_wrapper_active{
     line-height: 33px;
     border-radius: 6px;
-    border: 1px dashed red;
-    /*position: absolute;*/
-    /*left: 0;*/
-    /*top: 10px;*/
-    /*width: 85%;*/
-    /*padding: 0 10px;*/
+    box-shadow: 0px 0px 2px 2px #f4f6f5;
     text-align: center;
     background: #fff;
+    float: left;
 }
 
 .list_wrapper .list_item,.list_wrapper_active .list_item{
@@ -76,7 +76,26 @@
 /**
 下拉列表List鼠标漂浮状态
 **/
-
+.iconxiajiantou::after{
+    content: "\e731";
+    font-weight: bold;
+    display: block;
+    width: 14px;
+    margin-top: 4px;
+    font-size: 22px;
+    color: #8c8c8c;
+    /* border: 1px solid greenyellow; */
+    margin-left: 35px;
+    transform:rotate(269deg);
+    -ms-transform:rotate(269deg); /* Internet Explorer */
+    -moz-transform:rotate(269deg); /* Firefox */
+    -webkit-transform:rotate(269deg); /* Safari 和 Chrome */
+    -o-transform:rotate(269deg); /* Opera */
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-right: 5px;
+}
 
 
 
