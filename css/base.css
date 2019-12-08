@@ -12,5 +12,8 @@ html, body{
     outline: none
 }
 
-
+iframe {
+    margin: 0;
+    float: left;
+}
 
