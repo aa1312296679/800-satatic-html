@@ -11,9 +11,12 @@
     <link rel="stylesheet" type="text/css" href="../css/iconfont.css">
     <!--tabbar二级导航-->
     <link rel="stylesheet" type="text/css" href="../css/tabbarTwo.css">
+    <!--tabaPage1-->
+    <link rel="stylesheet" type="text/css" href="../css/homePage1.css">
 </head>
 <body>
-<!--二级导航-->
+
+<!--star二级导航-->
 <div class="tabbar_two_wrapper">
     <div class="tabbar_two_content">
        <!--头部标题-->
@@ -22,7 +25,7 @@
        </div>
         <div class="tabbbar_two_content_menu">
             <div class="menu_item icon iconfont iconxiajiantou">
-               <div class="list_wrapper_active">
+               <div class="menu_item_btn list_wrapper">
                    <div class="list_item">综合能源服务</div>
                    <div class="list_item">测试文字2</div>
                    <div class="list_item">测试文字3</div>
@@ -30,7 +33,7 @@
                </div>
             </div>
             <div class="menu_item icon iconfont iconxiajiantou">
-                <div class="list_wrapper">
+                <div class="menu_item_btn list_wrapper">
                     <div class="list_item">合同能源</div>
                     <div class="list_item">测试文字2</div>
                     <div class="list_item">测试文字3</div>
@@ -38,7 +41,7 @@
                 </div>
             </div>
             <div class="menu_item">
-                <div class="list_wrapper">
+                <div class="menu_item_btn list_wrapper">
                     <div class="list_item">节能效益分享</div>
                     <div class="list_item">测试文字2</div>
                     <div class="list_item">测试文字3</div>
@@ -48,7 +51,13 @@
         </div>
     </div>
 </div>
+<!--end二级导航-->
 
+<!--star内容部分-->
+<main class="content_wrapper">
+    <div class="content">内容部分</div>
+</main>
+<!--end内容部分-->
 
 
 <!--[if lt IE 9]>
@@ -58,9 +67,33 @@
 <script src="./../js/jquery.min.js"></script>
 <script src="./../js/iframeMessage.js"></script>
 <script>
+
+
    $(function () {
-       console.log("www");
+       $(".menu_item_btn").hover(function () {
+           console.log("鼠标已漂浮移入该按钮");
+           menuItemMouseHandle('hover',this);
+       },function () {
+           console.log("鼠标已漂浮移出该按钮");
+           menuItemMouseHandle('mouseOut',this);
+       })
    })
+
+
+   /**
+    * 鼠标移入和移除处理函数
+    * @param mouseState 鼠标状态
+    * @param menuTree 被漂浮的树形菜单
+    */
+   function menuItemMouseHandle(mouseSate,menuTree){
+       // 漂浮移入处理
+       if(mouseSate==="hover"){
+            $(menuTree).addClass('list_wrapper_active').removeClass('list_wrapper');
+       //漂浮离开处理
+       }else {
+           $(menuTree).addClass('list_wrapper').removeClass('list_wrapper_active');
+       }
+   }
 </script>
 </body>
 </html>

@@ -9,7 +9,6 @@
     min-width: 1200px;
     margin: 0 auto;
     /*overflow: hidden;*/
-    border: 1px dashed red;
     color: #595959;
     font-size: 14px;
     font-weight: 500;
@@ -45,10 +44,7 @@
 .tabbar_two_content .tabbbar_two_content_menu .menu_item{
     float: left;
     padding-top: 11px;
-    border: 1px dashed orange;
     position: relative;
-    /*position: relative;*/
-    /*min-width: 120px;*/
     padding-right: 25px;
 }
 
@@ -59,6 +55,7 @@
     text-align: center;
     background: #fff;
     float: left;
+    cursor: pointer;
 }
 
 .list_wrapper .list_item,.list_wrapper_active .list_item{

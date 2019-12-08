@@ -1,0 +1,16 @@
+.content_wrapper{
+    width: 100%;
+    border: 1px dashed red;
+    background: #f4f6f5;
+}
+
+.content_wrapper .content{
+    width: 91.8%;
+    min-width: 1200px;
+    margin: 0 auto;
+    /*overflow: hidden;*/
+    color: #595959;
+    font-size: 14px;
+    font-weight: 500;
+    border: 1px dashed red;
+}
