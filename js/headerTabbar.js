@@ -11,6 +11,7 @@ var headerTab={
        var activeTabItem=$(".tabbar_item")[index];
        // tab选项卡处理
        $(activeTabItem).addClass("tabbar_item_active").siblings().removeClass("tabbar_item_active");
+       activeIndex=index;
     }
 }
 
@@ -22,6 +23,11 @@ $(".tabbar_item").click(function () {
     // 获取被点击的tab导航
     var curIndex = $(this).index();
     headerTab['tabHandle'](curIndex);
+    //创建通讯对象
+    var tabbarConnect = new BroadcastChannel('tabbarConnect');
+    console.log(tabbarConnect);
+     console.log({curIndex:activeIndex});
+    tabbarConnect.postMessage({curIndex:activeIndex});
 });
 
 /**

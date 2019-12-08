@@ -32,6 +32,14 @@
         window.onload = function () {
             // 创建iframe通讯
             let cast = new BroadcastChannel('fsSend');
+
+            // cast.postMessage({handleName:'logoLeftHide'});
+            // console.log(cast);
+            // // 父级通讯监听
+            cast.onmessage = function (e) {
+                console.log("wwwwwww")
+                console.log(e.data);
+            }
         }
     </script>
 

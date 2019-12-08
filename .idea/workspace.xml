@@ -2,14 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e69cf37b-c00e-46e3-8910-1afed3221555" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/css/headerTabbar.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/headerTabbar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/headerTabbar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/header.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/headerSearch.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/headerSearch.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/headerTabbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/headerTabbar.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/headerTabbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/headerTabbar.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/iframeMessage.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/iframeMessage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/headerTabbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/headerTabbar.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,8 +20,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -74,7 +73,7 @@
       <workItem from="1575744741877" duration="11037000" />
       <workItem from="1575785428833" duration="672000" />
       <workItem from="1575786989614" duration="1010000" />
-      <workItem from="1575788309649" duration="18321000" />
+      <workItem from="1575788309649" duration="23342000" />
     </task>
     <servers />
   </component>

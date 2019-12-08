@@ -13,7 +13,6 @@
 .header_tabbar_content .tabbar_item1,.header_tabbar_content .tabbar_item2{
     height: 41px;
     line-height: 41px;
-    border: 1px solid greenyellow;
     float: left;
     font-size: 16px;
     font-weight: bold;
@@ -26,6 +25,7 @@
 
 .header_tabbar_content .tabbar_item1{
     padding: 0 20px;
+    overflow: hidden;
 }
 
 .header_tabbar_content .tabbar_item2{
@@ -41,4 +41,24 @@ tabbar选中时的样式
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
     background: #00926d;
+}
+
+.txt,.iconxiajiantou::after{
+    float: left;
+}
+
+.iconxiajiantou::after{
+    content: "\e731";
+    font-weight: bold;
+    display: block;
+    width: 14px;
+    margin-top: 4px;
+    font-size: 22px;
+    color: #fff;
+    margin-left: 35px;
+    transform:rotate(269deg);
+    -ms-transform:rotate(269deg); /* Internet Explorer */
+    -moz-transform:rotate(269deg); /* Firefox */
+    -webkit-transform:rotate(269deg); /* Safari 和 Chrome */
+    -o-transform:rotate(269deg); /* Opera */
 }
