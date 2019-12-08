@@ -1,0 +1,44 @@
+.header_tabbar_wrapper{
+    width: 100%;
+    border-bottom: 3px solid #00926d;
+}
+
+.header_tabbar_content{
+    width: 91.8%;
+    min-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.header_tabbar_content .tabbar_item1,.header_tabbar_content .tabbar_item2{
+    height: 41px;
+    line-height: 41px;
+    border: 1px solid greenyellow;
+    float: left;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.header_tabbar_content .tabbar_item1:hover,.header_tabbar_content .tabbar_item2:hover{
+    color: #00926d;
+    cursor: pointer;
+}
+
+.header_tabbar_content .tabbar_item1{
+    padding: 0 20px;
+}
+
+.header_tabbar_content .tabbar_item2{
+    padding: 0 30px;
+}
+
+/***
+tabbar选中时的样式
+ */
+.header_tabbar_content .tabbar_item_active{
+    color: #fff;
+    font-size: 18px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    background: #00926d;
+}
