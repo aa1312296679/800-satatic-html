@@ -18,16 +18,16 @@ var headerTab={
 //tab选中项初始化
 initialTabbar(0);
 
+
+//创建父窗口的通讯连接
+let cast = new BroadcastChannel('fsSend');
 // tabbar点击处理
 $(".tabbar_item").click(function () {
     // 获取被点击的tab导航
     var curIndex = $(this).index();
     headerTab['tabHandle'](curIndex);
-    //创建通讯对象
-    var tabbarConnect = new BroadcastChannel('tabbarConnect');
-    console.log(tabbarConnect);
-     console.log({curIndex:activeIndex});
-    tabbarConnect.postMessage({curIndex:activeIndex});
+
+    cast.postMessage({curIndex:activeIndex});
 });
 
 /**
@@ -37,3 +37,10 @@ $(".tabbar_item").click(function () {
 function initialTabbar(activeIndex) {
     headerTab['tabHandle'](activeIndex);
 }
+
+
+
+
+// document.onclick = function () {
+//     cast.postMessage('headerTabbar')
+// }
