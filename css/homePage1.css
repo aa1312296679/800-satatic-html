@@ -229,3 +229,28 @@
     margin-right: 6px;
     border-radius: 2px;
 }
+.item-show-detail .item_show_detail_content{
+    border: 1px solid red;
+    font-size: 12px;
+    overflow: hidden;
+}
+
+.item-show-detail .item_show_detail_content .star,
+.item-show-detail .item_show_detail_content .infor_text{
+    float: left;
+}
+
+.item-show-detail .item_show_detail_content .star,.item-show-detail .item_show_detail_content .infor_text{
+    display: block;
+    margin-right: 7px;
+}
+
+.item-show-detail .item_show_detail_content .star img{
+     width: 15px;
+     height: 15px;
+}
+
+.item-show-detail .item_show_detail_content .star{
+    max-width: 90px;
+    border: 1px dashed red;
+}

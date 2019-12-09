@@ -172,7 +172,14 @@
                         </div>
                     </div>
                     <div class="item-show-detail">
-                        评分部分
+                        <div class="item_show_detail_content">
+                            <div class="star"></div>
+                            <span class="infor_text">7级</span>
+                        </div>
+                        <div class="item_show_detail_content item_show_detail_content2">
+                            <span class="infor_text">信用:</span>
+                            <div class="star"></div>
+                        </div>
                     </div>
                     <div class="item-show-num">
                         <div class="item">
@@ -282,6 +289,8 @@
 <![endif]-->
 <script src="./../js/jquery.min.js"></script>
 <script src="./../js/iframeMessage.js"></script>
+<!--星评插件-->
+<script src="./../js/jquery.raty.js"></script>
 <script>
   var homePageHandles={
       hover:function (tree) {
@@ -303,6 +312,25 @@
 
        $(".item-class-select span").click(function () {
             $(this).addClass("active").siblings().removeClass("active");
+       });
+
+       //获取第一个星评盒子
+       var star=$(".item-show-detail .star")[0];
+       $(star).raty({
+           score: 3.5,
+           starHalf : '../imgs/star-half-big.png',
+           starOff  : '../imgs/star-off-big.png',
+           starOn   : '../imgs/star-on-big.png',
+           readOnly: true
+       });
+
+       var star=$(".item_show_detail_content2 .star")[0];
+       $(star).raty({
+           score: 3.5,
+           starHalf : '../imgs/star-half-big.png',
+           starOff  : '../imgs/star-off-big.png',
+           starOn   : '../imgs/star-on-big.png',
+           readOnly: true
        });
    })
 
