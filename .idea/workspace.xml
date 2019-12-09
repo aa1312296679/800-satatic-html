@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e69cf37b-c00e-46e3-8910-1afed3221555" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/paging.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/homePage1.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/homePage1.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/homePage1.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/homePage1.html" afterDir="false" />
@@ -30,14 +32,14 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../searchboxdesign" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/js" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\lenovo\Desktop\800-satatic-html\js" />
       <recent name="C:\Users\lenovo\Desktop\800-satatic-html\fonts" />
       <recent name="C:\Users\lenovo\Desktop\800-satatic-html\imgs" />
-      <recent name="C:\Users\lenovo\Desktop\800-satatic-html\js" />
       <recent name="C:\Users\lenovo\Desktop\800-satatic-html\css" />
       <recent name="C:\Users\lenovo\WebstormProjects\800-项目-静态\fonts" />
     </key>
@@ -84,7 +86,7 @@
       <workItem from="1575788309649" duration="23342000" />
       <workItem from="1575815670503" duration="19617000" />
       <workItem from="1575882287254" duration="7986000" />
-      <workItem from="1575899273160" duration="32009000" />
+      <workItem from="1575899273160" duration="33823000" />
     </task>
     <servers />
   </component>

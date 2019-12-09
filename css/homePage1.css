@@ -893,3 +893,17 @@ div.search {
 .listtrp_item_show_detail_content_one  .listtrp_items_wrapper:nth-child(2){
     float: right;
 }
+
+.pagination{
+    margin: 0 auto!important;
+    border: 1px solid red;
+    overflow: hidden;
+    display: block;
+    clear: both;
+}
+
+.pagination_wrapper{
+    border: 1px solid greenyellow;
+    margin: 0 auto;
+    width: 50%;
+}

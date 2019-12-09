@@ -345,6 +345,12 @@
                     </div>
                 </div>
             </div>
+            <!--分页插件-->
+            <div class="pagination_wrapper">
+                <ul id="pagination" class="pagination"></ul>
+            </div>
+
+
         </div>
 
         <div class="content_right">
@@ -509,9 +515,11 @@
             </div>
         </div>
     </div>
+
 </main>
 <!--end内容部分-->
 
+</body>
 
 <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -521,6 +529,9 @@
 <script src="./../js/iframeMessage.js"></script>
 <!--星评插件-->
 <script src="./../js/jquery.raty.js"></script>
+<!--bootstrap插件-->
+<script type="text/javascript" src="./../js/bootstrap.min.js" ></script>
+<script type="text/javascript" src="./../js/paging.js" ></script>
 <script>
   var homePageHandles={
       hover:function (tree) {
@@ -642,6 +653,8 @@
 						如果不写个阻止事件，会导致下面的document点击函数一起执行，导致显示失败*/
 
         });
+
+        //select下拉菜单
         $(".selectUl li").click(function(event){
             $(this).addClass("actived_li").siblings().removeClass("actived_li");//点击当前的添加。actived_li这个类；其他的移除这个类名
             var oliName = $(this).attr("oliName");//定义一个name属性，获取点击的元素属性赋值到当前，方便动态化传值
@@ -654,8 +667,23 @@
             $(".inputCase .fa").removeClass("fa-caret-up").addClass("fa-caret-down")//当点隐藏ul弹窗时候，把小图标恢复原状
             $(".selectUl").hide();//当点击空白处，隐藏ul弹窗
         });
-
     })
+</script>
+<script type="text/javascript">
+    //分页
+    var a={color:'red',sex:'black',border:'1px solid #ddd'};
+    var b={background:'black'};
+    $("#pagination").Paging({
+        classStyle:a,//a标签样式的对象,也可以不定义使用默认值
+        backClass:b,//选中的页数的背景，也可以不定义使用默认值
+        isFirst:true,   //首页按钮是否显示
+        isPre:true,     //下一页按钮是否显示
+        showRecordNum:10, // 一页列表数量
+        totalNum:450,   // 总列表数量
+        showNum:function(data1,data2){
+            alert(data1+","+data2);
+        }
+    });
 </script>
 </body>
 </html>
