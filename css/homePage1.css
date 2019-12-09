@@ -122,6 +122,9 @@ ul{
     background: #fff;
 }
 
+
+
+
 .content_item_wrapper .item-show-price .logo{
     width: 80px;
     height: 80px;
@@ -737,4 +740,69 @@ div.search {
     padding-top: 18.5px;
     padding-: 18.5px;
     font-size: 16px;
+}
+
+.listtrp_list_bottom{
+    border: 1px solid red;
+    height: 234.5px;
+    padding: 0 19.5px;
+    background: #f4f6f5;
+}
+
+.listtrp_list_bottom .title{
+    font-weight: bold;
+    font-size: 22px;
+    padding-top: 19px;
+    color: black;
+}
+
+.listtrp_list_bottom .stars_wrapper{
+    border: 1px solid red;
+    position: relative;
+}
+
+.listtrp_list_bottom .stars_wrapper .item_type{
+    width: 56.5px;
+    height: 24.5px;
+    text-align: center;
+    line-height: 24.5px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 12px;
+    border-radius: 2px;
+    background: #fff5d9;
+    border: 1px solid #ffc106;
+}
+
+.listtrp_list_bottom .stars_wrapper .item_type .ico_qijian{
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+}
+
+.listtrp_list_bottom .stars_wrapper .stars_show_detail_content{
+    border: 1px solid red;
+    font-size: 12px;
+    overflow: hidden;
+}
+
+.listtrp_list_bottom .stars_wrapper .stars_show_detail_content .star{
+    max-width: 90px;
+    border: 1px dashed red;
+    display: block;
+    margin-right: 7px;
+    float: right;
+}
+
+.listtrp_list_bottom .stars_wrapper .stars_show_detail_content .star img{
+    width: 15px;
+    height: 15px;
+}
+
+.listtrp_list_bottom .stars_wrapper .stars_show_detail_content .infor_text{
+    display: block;
+    margin-right: 7px;
+    margin-top: 2px;
+    float: right;
 }
