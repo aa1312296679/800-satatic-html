@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e69cf37b-c00e-46e3-8910-1afed3221555" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgs/item-show-price_logo_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgs/item_show_price_logo_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgs/item_show_price_logo_3.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/homePage1.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/homePage1.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/tabbarTwo.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/tabbarTwo.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/homePage1.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/homePage1.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,18 +34,19 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/css" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/imgs" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\lenovo\WebstormProjects\800-项目-静态\hrtml" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\lenovo\Desktop\800-satatic-html\imgs" />
       <recent name="C:\Users\lenovo\Desktop\800-satatic-html\css" />
       <recent name="C:\Users\lenovo\WebstormProjects\800-项目-静态\fonts" />
       <recent name="C:\Users\lenovo\WebstormProjects\800-项目-静态\imgs" />
       <recent name="C:\Users\lenovo\WebstormProjects\800-项目-静态\css" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\lenovo\WebstormProjects\800-项目-静态\hrtml" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -83,7 +87,8 @@
       <workItem from="1575786989614" duration="1010000" />
       <workItem from="1575788309649" duration="23342000" />
       <workItem from="1575815670503" duration="19617000" />
-      <workItem from="1575882287254" duration="4959000" />
+      <workItem from="1575882287254" duration="7986000" />
+      <workItem from="1575899273160" duration="3761000" />
     </task>
     <servers />
   </component>
