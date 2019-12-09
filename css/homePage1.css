@@ -707,3 +707,34 @@ div.search {
     top: 0;
     margin-right: 5px;
 }
+
+.listrp_list{
+    overflow: hidden;
+    padding-left: 1.5%;
+}
+
+.listrp_list .listrp_list_item{
+    width: 325px;
+    border: 1px solid red;
+    height: 440px;
+    float: left;
+    margin: 1.5%;
+}
+
+.listrp_list_item_img_wrapper img{
+    border: 1px dashed red;
+    height: 203.3px;
+    display: block;
+}
+
+.listrp_list_item_content{
+    background: #f4f6f5;
+    margin-top: 0;
+}
+
+.content_item_wrapper .item-show-info .item-show-price-2 {
+    overflow: hidden;
+    padding-top: 18.5px;
+    padding-: 18.5px;
+    font-size: 16px;
+}
