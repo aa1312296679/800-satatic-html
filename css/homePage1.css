@@ -205,5 +205,27 @@
     float: right;
 }
 .item-show-seller span{
-    color: black;;
+    color: black;
+    font-size: 12px;
+}
+
+.content_item_wrapper .mapIco::before{
+    content: "\e60b";
+    color:#cccccc;
+}
+
+.item-show-num{
+    overflow: hidden;
+}
+
+.item-show-num .item{
+    padding: 0 5px;
+    height: 23px;
+    line-height: 23px;
+    border: 1px solid #8c8c8c;
+    font-size: 12px;
+    text-align: center;
+    float: left;
+    margin-right: 6px;
+    border-radius: 2px;
 }
