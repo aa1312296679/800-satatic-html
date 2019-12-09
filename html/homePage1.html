@@ -67,7 +67,14 @@
 <script src="./../js/jquery.min.js"></script>
 <script src="./../js/iframeMessage.js"></script>
 <script>
-
+  var homePageHandles={
+      hover:function (tree) {
+          $(tree).addClass('list_wrapper_active').removeClass('list_wrapper');
+      },
+      mouseOut:function (tree) {
+          $(tree).addClass('list_wrapper').removeClass('list_wrapper_active');
+      }
+  }
 
    $(function () {
        $(".menu_item_btn").hover(function () {
@@ -86,13 +93,8 @@
     * @param menuTree 被漂浮的树形菜单
     */
    function menuItemMouseHandle(mouseSate,menuTree){
-       // 漂浮移入处理
-       if(mouseSate==="hover"){
-            $(menuTree).addClass('list_wrapper_active').removeClass('list_wrapper');
-       //漂浮离开处理
-       }else {
-           $(menuTree).addClass('list_wrapper').removeClass('list_wrapper_active');
-       }
+       // 鼠标移入或移出处理
+       homePageHandles[mouseSate](menuTree)
    }
 </script>
 </body>
