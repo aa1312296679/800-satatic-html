@@ -161,6 +161,7 @@
 
 .content_item_wrapper .item-show-info .item-show-detail{
     border: 1px dashed red;
+    position: relative;
 }
 
 .content_item_wrapper .item-show-info .item-show-num{
@@ -253,4 +254,24 @@
 .item-show-detail .item_show_detail_content .star{
     max-width: 90px;
     border: 1px dashed red;
+}
+
+.item-show-detail .item_type{
+    width: 56.5px;
+    height: 24.5px;
+    text-align: center;
+    line-height: 24.5px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 12px;
+    border-radius: 2px;
+    background: #fff5d9;
+    border: 1px solid #ffc106;
+}
+
+.item-show-detail .item_type .ico_qijian{
+    width: 14px;
+    height: 14px;
+    display: inline-block;
 }
