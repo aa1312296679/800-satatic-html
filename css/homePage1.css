@@ -13,4 +13,68 @@
     font-size: 14px;
     font-weight: 500;
     border: 1px dashed red;
+    overflow: hidden;
+    padding-top: 1%;
+}
+
+.content_wrapper .content .content_left{
+    float: left;
+}
+
+.content_wrapper .content .content_right{
+    float: right;
+}
+
+.content_wrapper .content .content_left{
+    border: 1px solid orange;
+    width: 80%;
+}
+
+.content_wrapper .content .content_right{
+    border: 1px solid red;
+    width: 18.7%;
+    margin-left: 17.5px;
+}
+
+.item-class-show{
+    padding-bottom: 15px;
+}
+
+.container-full{
+    width: 100%;
+    background: #fff;
+}
+
+.item-class-group{
+    overflow: hidden;
+}
+
+.item-class-group .item-class-name,.item-class-group .item-class-select{
+    float: left;
+    padding-top: 15px;
+}
+
+.item-class-group .item-class-name{
+    font-weight: bold;
+}
+
+.item-class-group .item-class-name{
+    padding-left: 15px;
+}
+
+.item-class-group .item-class-select{
+    padding-left: 7px;
+}
+
+.item-class-group .item-class-select span{
+    margin-right: 15px;
+    padding:2px 10px;
+    display: inline-block;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.item-class-group .item-class-select span.active{
+    background: #00926d;
+    color: #fff;
 }

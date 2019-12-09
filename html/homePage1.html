@@ -13,6 +13,8 @@
     <link rel="stylesheet" type="text/css" href="../css/tabbarTwo.css">
     <!--tabaPage1-->
     <link rel="stylesheet" type="text/css" href="../css/homePage1.css">
+    <!--bootstrap-->
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
 </head>
 <body>
 
@@ -55,7 +57,93 @@
 
 <!--star内容部分-->
 <main class="content_wrapper">
-    <div class="content">内容部分</div>
+    <div class="content">
+        <div class="content_left">
+            <!-- 内容主题开始 -->
+            <div class="container-full">
+                <div class="item-class-show">
+                    <div class="item-class-group">
+                        <div class="item-class-name">
+                            <span>服务类型：</span>
+                        </div>
+                        <div class="item-class-select">
+                            <span class="active">华为（HUAWEI）</span>
+                            <span>三星（SAMSUNG）</span>
+                            <span>MATE</span>
+                            <span>摩斯维（msvii）</span>
+                            <span>OPPO</span>
+                        </div>
+                    </div>
+                    <div class="item-class-group">
+                        <div class="item-class-name">
+                            <span>服务等级：</span>
+                        </div>
+                        <div class="item-class-select">
+                            <span class="active">手机保护套</span>
+                            <span>苹果周边</span>
+                            <span>手机贴膜</span>
+                            <span>移动电源</span>
+                            <span>创意配件</span>
+                            <span>手机耳机</span>
+                            <span>手机支架</span>
+                        </div>
+                    </div>
+                    <div class="item-class-group">
+                        <div class="item-class-name">
+                            <span>擅长技能：</span>
+                        </div>
+                        <div class="item-class-select">
+                            <span class="active">软壳</span>
+                            <span>硬壳</span>
+                            <span>翻盖式</span>
+                            <span>边框</span>
+                            <span>运动臂包</span>
+                            <span>钱包式</span>
+                            <span>定制</span>
+                            <span>防水袋</span>
+                            <span>布袋</span>
+                            <span>其他</span>
+                        </div>
+                    </div>
+                    <div class="item-class-group">
+                        <div class="item-class-name">
+                            <span>注册资金：</span>
+                        </div>
+                        <div class="item-class-select">
+                            <span class="active">塑料/PC</span>
+                            <span>硅胶</span>
+                            <span>金属</span>
+                            <span>电镀</span>
+                            <span>真皮</span>
+                            <span>树脂</span>
+                            <span>木质</span>
+                            <span>镶钻</span>
+                            <span>液态硅胶</span>
+                            <span>TPU</span>
+                        </div>
+                    </div>
+                    <div class="item-class-group">
+                        <div class="item-class-name">
+                            <span>规模人数：</span>
+                        </div>
+                        <div class="item-class-select">
+                            <span class="active">塑料/PC</span>
+                            <span>硅胶</span>
+                            <span>金属</span>
+                            <span>电镀</span>
+                            <span>真皮</span>
+                            <span>树脂</span>
+                            <span>木质</span>
+                            <span>镶钻</span>
+                            <span>液态硅胶</span>
+                            <span>TPU</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content_right">右部分模块</div>
+    </div>
 </main>
 <!--end内容部分-->
 
@@ -84,6 +172,10 @@
            console.log("鼠标已漂浮移出该按钮");
            menuItemMouseHandle('mouseOut',this);
        })
+
+       $(".item-class-select span").click(function () {
+            $(this).addClass("active").siblings().removeClass("active");
+       });
    })
 
 
