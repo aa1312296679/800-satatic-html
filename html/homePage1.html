@@ -15,6 +15,11 @@
     <link rel="stylesheet" type="text/css" href="../css/homePage1.css">
     <!--bootstrap-->
     <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+
+    <style type="text/css">
+
+    </style>
+    <link rel="stylesheet" type="text/css" href="http://www.jq22.com/jquery/font-awesome.4.6.0.css">
 </head>
 <body>
 
@@ -175,7 +180,18 @@
                   <!--排序方式end-->
                   <!--input框star-->
                    <div class="listsrp_sortbar_inputs_wrapper">
-                       input
+                       <!--下拉框-->
+                       <div class="selectBox">
+                           <div class="inputCase">
+                               <input class="imitationSelect" type="text" oulName="" oulId="" value="橘子" readonly/>
+                               <i class="fa fa-caret-down"></i>
+                           </div>
+                           <ul class="selectUl">
+                               <li oliName="橘子" oliId="1" class="actived_li">橘子</li>
+                               <li oliName="苹果" oliId="2">苹果</li>
+                               <li oliName="桃子" oliId="3">桃子</li>
+                           </ul>
+                       </div>
                    </div>
                   <!--input框end-->
                   <!--页码容器star-->
@@ -466,6 +482,36 @@
        // 鼠标移入或移出处理
        homePageHandles[mouseSate](menuTree)
    }
+</script>
+<script type="text/javascript">
+    $(function(){
+        $(".selectBox .imitationSelect").on("click",function(){
+            $(this).parent().next().toggle();//ul弹窗展开
+            $(this).next().toggleClass("fa-caret-up")//点击input选择适合，小图标动态切换
+            if (event.stopPropagation) {
+                // 针对 Mozilla 和 Opera
+                event.stopPropagation();
+            }else if (window.event) {
+                // 针对 IE
+                window.event.cancelBubble = true;
+            }   /*阻止事件传播，事件从点击的元素出发，向外（window）传播，
+						如果不写个阻止事件，会导致下面的document点击函数一起执行，导致显示失败*/
+
+        });
+        $(".selectUl li").click(function(event){
+            $(this).addClass("actived_li").siblings().removeClass("actived_li");//点击当前的添加。actived_li这个类；其他的移除这个类名
+            var oliName = $(this).attr("oliName");//定义一个name属性，获取点击的元素属性赋值到当前，方便动态化传值
+            var oliId = $(this).attr("oliId");//定义一个id属性，获取点击的元素属性赋值到当前，方便动态化传值
+            $(this).parent().prev().children().val(oliName); //把当前点击的name赋值到显示的input的val里面
+            $(this).parent().prev().children().attr("oliName",oliName);//把当前点击的oliName赋值到显示的input的oliName里面
+            $(this).parent().prev().children().attr("oliId",oliId);//把当前点击的oliId赋值到显示的input的oliId里面
+        });
+        $(document).click(function(event){
+            $(".inputCase .fa").removeClass("fa-caret-up").addClass("fa-caret-down")//当点隐藏ul弹窗时候，把小图标恢复原状
+            $(".selectUl").hide();//当点击空白处，隐藏ul弹窗
+        });
+
+    })
 </script>
 </body>
 </html>

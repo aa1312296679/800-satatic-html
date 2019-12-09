@@ -287,11 +287,23 @@ ul{
 .listrp_list{
     width: 100%;
     background: #ffff;
+    clear: both;
 }
 
 .listsrp_sortbar{
     margin-top: 1.5%;
     font-size: 12px;
+    /*overflow: hidden;*/
+}
+
+.listsrp_sortbar::after{
+    content:"";
+    display: block;
+    clear: both;
+}
+
+.listsrp_sortbar .listsrp_sortbar_list_wrapper,.listsrp_sortbar .listsrp_sortbar_inputs_wrapper{
+    float: left;
 }
 
 .listsrp_sortbar .listsrp_sortbar_list_wrapper{
@@ -336,3 +348,66 @@ ul{
 .listsrp_sortbar_list_item_active,.sort_up_jiantou::before,.sort_down_jiantou::after{
     color: #00926d;
 }
+
+
+.listsrp_sortbar_inputs_wrapper{
+    border: 1px solid orange;
+    display: inline-block;
+}
+
+.selectBox{
+    width: 80px;
+    height: 25.6px;
+    line-height: 25.6px;
+    background: #fff;
+    margin-top: 6px;
+    color: #d7d7d7;
+    border: 1px solid #d7d7d7;
+    border-radius: 5px;
+}
+
+.inputCase{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+.inputCase input.imitationSelect{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    display: block;
+    text-indent: 20px;
+    cursor: default;
+}
+.inputCase i.fa{
+    position: absolute;
+    right: 10px;
+    top: 6px;
+    color: #a6a6a6;
+}
+.selectUl{
+    display: none;
+    padding: 0;
+    margin: 0;
+    border-bottom: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+.selectUl li{
+    height: 25.6px;
+    line-height: 25.6px;
+    list-style: none;
+    text-indent: 20px;
+    border-bottom: 1px solid #ccc;transition: all .5s ease 0s;
+    cursor: pointer;
+    background: #fff;
+}
+.selectUl li:hover{
+    background: #ddd;
+}
+.selectUl li:last-child{
+    border-bottom: 0 none;
+}
+
