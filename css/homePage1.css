@@ -806,3 +806,49 @@ div.search {
     margin-top: 2px;
     float: right;
 }
+
+.listtrp_list_bottom .stars_wrapper .listtrp_item_show_detail_content{
+    border: 1px solid red;
+    font-size: 12px;
+    overflow: hidden;
+}
+
+.listtrp_list_bottom .listtrp_item_show_detail_content .infor_text{
+    display: block;
+    margin-right: 7px;
+    float: left;
+}
+
+.listtrp_item_show_detail_content{
+  overflow: hidden;
+  border-bottom:1px dashed #cfd1d0;
+  padding-bottom: 5px;
+}
+
+.listtrp_list_bottom .listtrp_item_show_detail_content .star{
+    border: 1px solid red;
+    max-width: 90px;
+    display: block;
+    margin-right: 7px;
+    float: left;
+}
+
+.listtrp_list_bottom .listtrp_item_show_detail_content .star img{
+    width: 15px;
+    height: 15px;
+}
+
+.listtrp_list_bottom .listtrp_item-show-num{
+    padding:6px 0;
+}
+
+.listtrp_list_bottom .item-show-seller {
+    padding: 17.5px 0;
+    border: 1px dashed blue;
+}
+
+
+.listtrp_list_bottom .mapIco::before {
+    content: "\e60b";
+    color: #cccccc;
+}
