@@ -223,7 +223,18 @@
                         </div>
                     </div>
                     <div class="item-show-detail">
-                        评分部分
+                        <div class="item_show_detail_content">
+                            <div class="star"></div>
+                            <span class="infor_text">7级</span>
+                        </div>
+                        <div class="item_show_detail_content item_show_detail_content2">
+                            <span class="infor_text">信用:</span>
+                            <div class="star"></div>
+                        </div>
+                        <div class="item_type">
+                            <img class="ico_qijian" src="../imgs/qijianIco.png">
+                            <span>旗舰</span>
+                        </div>
                     </div>
                     <div class="item-show-num">
                         <div class="item">
@@ -263,7 +274,18 @@
                         </div>
                     </div>
                     <div class="item-show-detail">
-                        评分部分
+                        <div class="item_show_detail_content">
+                            <div class="star"></div>
+                            <span class="infor_text">7级</span>
+                        </div>
+                        <div class="item_show_detail_content item_show_detail_content2">
+                            <span class="infor_text">信用:</span>
+                            <div class="star"></div>
+                        </div>
+                        <div class="item_type">
+                            <img class="ico_qijian" src="../imgs/qijianIco.png">
+                            <span>旗舰</span>
+                        </div>
                     </div>
                     <div class="item-show-num">
                         <div class="item">
@@ -280,7 +302,7 @@
                         <span>北京市</span>
                     </div>
                 </div>
-        </div>
+            </div>
         </div>
     </div>
 </main>
@@ -318,25 +340,78 @@
             $(this).addClass("active").siblings().removeClass("active");
        });
 
-       //获取第一个星评盒子
-       var star=$(".item-show-detail .star")[0];
-       $(star).raty({
-           score: 3.5,
-           starHalf : '../imgs/star-half-big.png',
-           starOff  : '../imgs/star-off-big.png',
-           starOn   : '../imgs/star-on-big.png',
-           readOnly: true
-       });
 
-       var star=$(".item_show_detail_content2 .star")[0];
-       $(star).raty({
-           score: 4,
-           starOff  : '../imgs/taoxin_off.png',
-           starOn   : '../imgs/taoxin_on.png',
-           readOnly: true
-       });
-   })
+       //所有itemShowDetail的星评信息
+        var itemShowDetail=[
+           {
+               score: 3.5,
+               starHalf: '../imgs/star-half-big.png',
+               starOff: '../imgs/star-off-big.png',
+               starOn: '../imgs/star-on-big.png',
+               readOnly: true
+           },
+            {
+                score: 5,
+                starHalf: '../imgs/star-half-big.png',
+                starOff: '../imgs/star-off-big.png',
+                starOn: '../imgs/star-on-big.png',
+                readOnly: true
+            },
+            {
+                score: 4,
+                starHalf: '../imgs/star-half-big.png',
+                starOff: '../imgs/star-off-big.png',
+                starOn: '../imgs/star-on-big.png',
+                readOnly: true
+            }
+        ];
 
+        // 所有itemShowDetailContent2的配置信息
+        var itemShowDetailContent2=[
+            {
+                score: 4,
+                starOff  : '../imgs/taoxin_off.png',
+                starOn   : '../imgs/taoxin_on.png',
+                readOnly: true
+            },
+            {
+                score: 3,
+                starOff  : '../imgs/taoxin_off.png',
+                starOn   : '../imgs/taoxin_on.png',
+                readOnly: true
+            },
+            {
+                score: 2,
+                starOff  : '../imgs/taoxin_off.png',
+                starOn   : '../imgs/taoxin_on.png',
+                readOnly: true
+            }
+        ]
+
+
+       // 渲染右侧星星
+       starsHandle(itemShowDetail,'item-show-detail','star');
+       // 渲染右侧桃心
+       starsHandle(itemShowDetailContent2,'item_show_detail_content2','star');
+   });
+
+   /***
+    * 渲染星星插件
+    * @param ratyObjects 所有星星配置
+    * @param starWrapperName 星星外层盒子类名
+    * @param starName 星星盒子类名
+    * */
+  function starsHandle(ratyObjects,starWrapperName,starName) {
+       for(var i=0;i<ratyObjects.length;i++){
+           //获取当前的星评配置
+           var tempRaty=ratyObjects[i];
+           //获取星评盒子
+           var tempStarWrapper = $("."+starWrapperName)[i];
+           // 获取星星盒子
+           var tempStar=$(tempStarWrapper).find("."+starName)[0];
+           $(tempStar).raty(tempRaty);
+       }
+   }
 
    /**
     * 鼠标移入和移除处理函数
