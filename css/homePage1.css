@@ -747,6 +747,7 @@ div.search {
     height: 234.5px;
     padding: 0 19.5px;
     background: #f4f6f5;
+    font-size: 12px;
 }
 
 .listtrp_list_bottom .title{
@@ -785,6 +786,7 @@ div.search {
     border: 1px solid red;
     font-size: 12px;
     overflow: hidden;
+    padding-bottom: 15px;
 }
 
 .listtrp_list_bottom .stars_wrapper .stars_show_detail_content .star{
@@ -845,10 +847,49 @@ div.search {
 .listtrp_list_bottom .item-show-seller {
     padding: 17.5px 0;
     border: 1px dashed blue;
+    position: relative;
 }
 
 
 .listtrp_list_bottom .mapIco::before {
     content: "\e60b";
     color: #cccccc;
+}
+
+.listtrp_list_bottom .search_btn{
+    width: 138.5px;
+    height: 39.5px;
+    line-height: 39.5px;
+    text-align: center;
+    position: absolute;
+    right: 0;
+    color: #fff;
+    top:50%;
+    margin-top:-19.75px;
+    background: -webkit-linear-gradient(left, #00be9f, #009671);
+    background: -o-linear-gradient(left,#00be9f, #009671);
+    background: -moz-linear-gradient(left,#00be9f, #009671);
+    background: -ms-linear-gradient(left,#00be9f, #009671);
+    font-weight: bold;
+}
+
+.listtrp_item_show_detail_content_one .listtrp_item_num{
+    border: 1px solid greenyellow;
+    color: #ed770a;
+}
+
+.listtrp_item_show_detail_content_one  .listtrp_items_wrapper{
+    border: 1px solid red;
+}
+
+.listtrp_item_show_detail_content_one{
+    overflow: hidden;
+}
+
+.listtrp_item_show_detail_content_one  .listtrp_items_wrapper:nth-child(1){
+    float: left;
+}
+
+.listtrp_item_show_detail_content_one  .listtrp_items_wrapper:nth-child(2){
+    float: right;
 }
